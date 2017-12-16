@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="google-signin-client_id" content="603825168953-nm6t39iqfcsk8d8q3ssmduraqg9hvjh6.apps.googleusercontent.com">
+  <script src="https://apis.google.com/js/api.js" async defer></script>
+  <script src="https://apis.google.com/js/platform.js?onload=onLoadCallback" async defer></script>
+
+
+  <title>Document</title>
+</head>
+<body>
+  <!-- Google Log In div    -->
+  <div id="signin" class="g-signin2" data-onsuccess="onSignIn"></div>
+  <!--Script to put in common.js-->
+  <script>
+  window.onLoadCallback = function(){
+gapi.auth2.init({
+    client_id: '603825168953-nm6t39iqfcsk8d8q3ssmduraqg9hvjh6.apps.googleusercontent.com'
+  });
+}
+
+  </script>
+</body>
+</html>
