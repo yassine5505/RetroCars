@@ -1,8 +1,8 @@
 var GoogleAuth; // Google Auth object.
 function initClient() {
   gapi.client.init({
-      'apiKey': 'YOUR_API_KEY',
-      'clientId': 'YOUR_CLIENT_ID',
+      'apiKey': 'AIzaSyC0bVC3y5J-Sdwntwf_utPGsi59p05HR2U',
+      'clientId': '603825168953-nm6t39iqfcsk8d8q3ssmduraqg9hvjh6.apps.googleusercontent.com',
       'scope': 'https://www.googleapis.com/auth/drive.metadata.readonly',
       'discoveryDocs': ['https://www.googleapis.com/discovery/v1/apis/drive/v3/rest']
   }).then(function () {
@@ -22,7 +22,7 @@ function onFailure(error) {
   console.log(error);
 }
 function renderButton() {
-  gapi.signin2.render('g-signin2', {
+  gapi.signin2.render('gSignIn', {
     'scope': 'profile email',
     'width': 240,
     'height': 50,
