@@ -1,0 +1,45 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #4cb97f !important;
+  font-family: 'Bungee', 'sans-serif';
+
+}
+
+#score{
+  background-color:rgba(0,0,0,0.5);
+  color: black;
+  display: block;
+  margin: auto;
+}
+
+.fa  {
+  font-size: 70px;
+  color: #fff;
+  text-decoration : none;
+
+
+}
+a{
+  text-decoration: none;
+}
+i:hover{
+  color: #4cb97f;
+  background-color: #fff;
+}
+a:hover{
+  color: #4cb97f;
+  text-decoration:none;
+}
+#title{
+  font-size: 80px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bolder;
+}
+#chooseYourCar{
+  font-size : 68px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bolder;
+}
