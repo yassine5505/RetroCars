@@ -5,20 +5,20 @@ var carPosition; //carPos updated
 var carPositions; //array
 var carCanMove; //if can can move or not, used in moveCar()
 var obstacleGroup; //obstacles (police)
-var carHorizontalSpeed = 600;
-var obstacleSpeed = 800 ;
-var carMoveDelay = obstacleSpeed * 5   ;
+var carHorizontalSpeed = 400;
+var obstacleSpeed = 1500  ;
+var carMoveDelay = obstacleSpeed / 5   ;
 var lineSpeed = 300 ;
-var obstacleDelay = 1000 ;//time between cars appearing
+var obstacleDelay = 3000 ;//time between cars appearing
 var difficulty = 1;
 var score ;
 score = 1;
 var time;
 var lastClick;
 var verticalTween;
-var carVerticalSpeed = 10000;
+var carVerticalSpeed = 30000;
 var lastClick;
-var carInvisibilityTime = 3000;
+var carInvisibilityTime = 5000;
 var particle, emitter;
 
 window.onload = function() {
@@ -43,7 +43,10 @@ preload: function(){
 /*CREATE****/
 /************/
   create: function(){
+
         //ADD background
+
+
         background = game.add.sprite(0,0,"background");
         scoreText = game.add.text(0, 0, 'Score: ', { fontFamily:'Bungee',fontSize: '16px', fill: '#000' });
         scoreText.font = 'Bungee';
@@ -144,9 +147,9 @@ preload: function(){
           carPosition = 1 - carPosition;
           carCanMove = false;
           //KEYBOARD CONDITIONS
-          if(cursors.right.isDown  && carPosition == game.width){
+          if(this.cursors.right.isDown  && carPosition == game.width){
             this.car.body.velocity.x = 200;
-            if(cursors.right.isDown){
+            if(this.cursors.right.isDown){
               var moveTween = game.add.tween(car).to({
                    x: game.width,
               }, carHorizontalSpeed, Phaser.Easing.Linear.None, true);
@@ -157,7 +160,7 @@ preload: function(){
               });
             }
             }
-          else if(cursors.left.isDown && car.body.x<game.width){
+          else if(this.cursors.left.isDown && car.body.x<game.width){
 
           }
      }
@@ -177,9 +180,6 @@ preload: function(){
                alpha:1},
                carInvisibilityTime, Phaser.Easing.Linear.None, true);
            })
-         }
-         if(this.car.position.y <= 0){
-           window.location.replace("cars.html");
          }
 
     };
