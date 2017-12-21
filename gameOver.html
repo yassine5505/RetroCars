@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>RetroCars - Game</title>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/phaser/2.4.8/phaser.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <style>
+    body{
+      margin : 0;
+      padding: 0;
+      font-family: 'Bungee', 'sans-serif';
+      background-color: #4cb97f;
+    }
+    #canva{
+      display: block;
+      background-image: url("assets/background.png");
+      background-repeat:  no-repeat;
+      margin: auto;
+      height: 560px;
+      width: 320px;
+    }
+    #gameOver{
+      display: block;
+      border: 1px solid black;
+      border-radius: 5px;
+      vertical-align: middle !important;
+      font-size : 0.9em;
+      margin: 0 auto;
+      padding-top: 10px;;
+
+      height: 150px;
+      width: 80%;
+      color: #fff;
+      background-color: rgba(0,0,0,0.7);
+      text-align: center;
+      }
+      #redo{
+        font-size: 1em;
+      }
+    #title{
+          font-size: 1em;
+          text-decoration: none;
+          color: #fff;
+          font-weight: bolder;
+          margin-left: auto;
+    }
+    p{
+      font-size: 0.8em;
+    }
+    .fa{
+      font-size : 1em;
+    }
+    .redo{
+      display: inline;
+    }
+    #score{
+      color: #fff;
+    }
+    </style>
+    <body class="container">
+      <div id="title">
+        <h3>RetroCars</h3>
+      </div>
+      <div id="canva" class="">
+        <div id="gameOver">
+            <p class="redo">Game over.</p>
+            <p id="score" class="redo"></p>
+            <p>  Do you want to: </p>
+            <p class="redo"><a href="cars.html"><i class="fa fa-refresh" aria-hidden="true" alt="Play Again"></i></a> or <a href="homePage.html"><i class="fa fa-home" alt="Return to Home"></i></a></p>
+            </div>
+      </div>
+    </div>
+    </body>
+</html>

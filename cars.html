@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>RetroCars - Choose Your Car</title>
+  <link rel="stylesheet" href="mainStyle.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+
+</head>
+<body>
+  <style>
+  body{
+    background-color: #4cb97f;
+    font-family: 'Bungee', 'sans-serif';
+  }
+  .fa  {
+    font-size: 10em;
+    color: #fff;
+    text-decoration : none;
+
+
+  }
+  a{
+    text-decoration: none;
+    color: #fff;
+  }
+  .fa-home{
+    font-size: 5em;
+    color: #fff;
+    text-decoration: none;
+  }
+  i:hover{
+    color: #4cb97f;
+    background-color: #fff;
+  }
+  a:hover{
+    color: #4cb97f;
+    text-decoration:none;
+  }
+  #title{
+    font-size: 4em;
+    text-decoration: none;
+    font-weight: bolder;
+  }
+  #chooseYourCar{
+    font-size : 68px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bolder;
+  }
+
+  </style>
+  <div class="container w-100">
+    <div class="d-flex flex-row justify-content-start">
+      <ul class="flex-item list-unstyled">
+        <li><a href="index.html"><i class="fa fa-home"></i></a></li>
+      </ul>
+    </div>
+    <div class="d-flex flex-row justify-content-around mt-1">
+      <div class="flex-item" id="titleContainer">
+          <a href="#"><h1 id="title">RetroCars</h1></i></a>
+      </div>
+    </div>
+    <div class="d-flex flex-row justify-content-around mt-4">
+      <div class="flex-item text-center" id="chooseYourCar">
+          <h3 id="">Choose your car</h3>
+      </div>
+    </div>
+
+  <!--CAR CHOICE CAROUSEL-->
+  <div class="d-flex flex-row no-gutters mt-1 justify-content-around  align-center">
+    <div id="slider4" class="carousel slide mb-5" data-ride="carousel">
+  <div class="carousel-inner" role="listbox">
+    <ol class="carousel-indicators">
+      <li class="active" data-target="#slider3" data-slide-to="0"></li>
+      <li data-target="#slider4" data-slide-to="1"></li>
+      <li data-target="#slider4" data-slide-to="2"></li>
+      <li data-target="#slider4" data-slide-to="3"></li>
+    </ol>
+    <div class="carousel-item active">
+      <a href="easy.html"><img class="inline img-fluid pt-2" src="carousel/green.png" alt="First Slide"></a>
+        <div class="carousel-caption d-none d-lg-block">
+          <h3>Green Car</h3>
+          <p>Max Speed: 200 km/h</p>
+          <p>Difficulty : Easy</p>
+        </div>
+    </div>
+    <div class="carousel-item ">
+      <a href="amateur.html"><img class="inline img-fluid pt-2" src="carousel/yellow.png" alt="First Slide"></a>
+        <div class="carousel-caption d-none d-lg-block">
+          <h3>Yellow Car</h3>
+          <p>Max Speed: 220 km/h</p>
+          <p>Difficulty : Amateur</p>
+        </div>
+    </div>
+    <div class="carousel-item ">
+      <a href="medium.html"><img class="inline img-fluid pt-2" src="carousel/blue.png" alt="First Slide"></a>
+        <div class="carousel-caption d-none d-lg-block">
+          <h3>Blue Car</h3>
+          <p>Max Speed: 240 km/h</p>
+          <p>Difficulty : Medium</p>
+        </div>
+    </div>
+    <div class="carousel-item ">
+      <a href="expert.html"><img class="inline img-fluid pt-2" src="carousel/red.png" alt="First Slide"></a>
+        <div class="carousel-caption d-none d-lg-block">
+          <h3>Red Car</h3>
+          <p>Max Speed: 300 km/h</p>
+          <p>Difficulty : Expert</p>
+        </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#slider4" data-slide="prev"><span class="carousel-control-prev-icon"></span></a>
+  <a class="carousel-control-next" href="#slider4" data-slide="next"><span class="carousel-control-next-icon"></span></a>
+</div>
+  </div>
+</div>
+
+
+
+<script>
+$('.carousel').carousel({
+  keyboard: true,
+  pause:'hover'
+})
+</script>
+</body>
+</html>
